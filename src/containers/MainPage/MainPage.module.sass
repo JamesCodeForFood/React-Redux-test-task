@@ -1,0 +1,71 @@
+.actionButtons_wrapper
+  display: flex
+  flex-wrap: wrap
+
+  > button
+    margin: 5px 0
+    width: calc(50% - 10px)
+
+    &:nth-child(odd)
+      margin-right: 20px
+
+.title_wrapper
+  display: flex
+  justify-content: space-between
+  padding: 15px 0
+  margin-top: 10px
+  border-top: 2px solid #e2e2e2
+  border-bottom: 2px solid #e2e2e2
+
+  & h4
+    margin: 0
+    display: flex
+    align-items: center
+
+.icon
+  display: block
+  width: 20px
+  height: 20px
+  position: absolute
+  top: 5px
+  right: 5px
+  mask-repeat: no-repeat
+
+  &_list
+    background: #009797
+    mask-image:  url("/icons/list.svg")
+
+  &_blocks
+    background: #009797
+    mask-image: url("/icons/table-grid.svg")
+
+  &_active
+    background: white
+
+.button
+  width: 30px
+  height: 30px
+  background-color: white
+  position: relative
+
+  &:hover:not(&_active)
+    background-color: white
+
+  &:not(:last-child)
+    margin-right: 10px
+
+  &_active
+    background-color: #009797
+
+    &:hover
+      background-color: #009797 !important
+
+  &:not(&_active)
+    box-shadow: none
+
+.objectList_wrapper
+  padding: 15px 0
+  border-bottom: 2px solid #e2e2e2
+
+.objectCreateNew_wrapper
+  padding: 15px 0

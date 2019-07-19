@@ -1,0 +1,19 @@
+.button
+  background-color: #009797
+  color: white
+  border: none
+  padding: 5px
+  width: 50%
+  font-size: 15px
+  border-radius: 3px
+  // yeah, it's bad but we can skip overwriting outline by using other visible-helpers on test task
+  outline: none
+  box-shadow: 3px 2px 3px rgba(0,0,0,0.13), -3px 3px 5px rgba(0,0,0,0.07)
+  text-transform: uppercase
+  letter-spacing: 1px
+
+  &:not(:disabled)
+    cursor: pointer
+
+    &:hover
+      background-color: #15cfcf
